@@ -107,8 +107,15 @@ def custom_remove(input_list, value):
         True
 
     """
+    
+    """if input_list[0] == value:
+        input_list[0] = []
+        # this is replace/reassigning. remember that if you want to remove then need to [index_to_remove:index_after_need_to_remove]
+        """
+    if input_list[0] == value:
+        input_list[0:1] = []
 
-    pass
+    return None
 
 
 def custom_pop(input_list):
