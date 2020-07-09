@@ -87,8 +87,9 @@ def custom_insert(input_list, index, value):
         True
 
     """
-
-    pass
+    input_list[index:index] = [value]
+    # remember it is inserting at specified index, not replacing
+    return None
 
 
 def custom_remove(input_list, value):
