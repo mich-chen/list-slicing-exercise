@@ -134,7 +134,10 @@ def custom_pop(input_list):
 
     """
 
-    return None
+    # should return last item in the list and then remove it from the list
+    to_remove = input_list[-1]
+    input_list[-1:] = []
+    return to_remove
 
 
 def custom_index(input_list, value):
