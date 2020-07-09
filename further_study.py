@@ -48,6 +48,7 @@ def custom_append(input_list, value):
     """
 
     input_list[custom_len(input_list):] = [value]
+    # remember the value has to also be a list, even if it is empty
     return None
 
 
@@ -66,8 +67,10 @@ def custom_extend(input_list, second_list):
         True
 
     """
-
-    pass
+    # extended_list = custom_append(input_list, second_list)
+    # the above does not work because we are now storing second_list into a [] and therefore  it will look like ['Jan', 'Feb', 'Mar', ['Apr', 'May']]
+    input_list[custom_len(input_list):] = second_list
+    return None
 
 
 def custom_insert(input_list, index, value):
