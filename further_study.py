@@ -198,7 +198,6 @@ def custom_reverse(input_list):
     # input_list = input_list[::-1] 
     # ^ just reassigning reverse to the name input_list, even though it is the same name as the original list. this is making a copy, not mutating orig copy.
     
-
     return None
 
 
@@ -219,8 +218,11 @@ def custom_contains(input_list, value):
 
     """
 
+    for i in input_list:
+        if i == value:
+            return True
 
-    return None
+
 
 
 def custom_equality(some_list, another_list):
