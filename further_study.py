@@ -193,8 +193,13 @@ def custom_reverse(input_list):
         True
 
     """
+    input_list[:] = input_list[::-1] 
+    # ^ mutating list by referencing the items inside the list, even if it means everything [:]
+    # input_list = input_list[::-1] 
+    # ^ just reassigning reverse to the name input_list, even though it is the same name as the original list. this is making a copy, not mutating orig copy.
+    
 
-    pass
+    return None
 
 
 def custom_contains(input_list, value):
@@ -213,6 +218,7 @@ def custom_contains(input_list, value):
         True
 
     """
+
 
     return None
 
