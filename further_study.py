@@ -221,6 +221,8 @@ def custom_contains(input_list, value):
     for i in input_list:
         if i == value:
             return True
+        else:
+            return False
 
 
 
@@ -241,7 +243,10 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    if some_list == another_list:
+        return True
+    else:
+        return False
 
 
 # This is the part were we actually run the doctests.
