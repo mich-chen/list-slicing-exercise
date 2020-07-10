@@ -217,12 +217,14 @@ def custom_contains(input_list, value):
         True
 
     """
-
+    contains = False
     for i in input_list:
         if i == value:
-            return True
-        else:
-            return False
+            contains = True
+            return contains
+    # set if statement to return True when you hit the value that matches. or else let it continue to go through the list. if it never matches then default is False.
+
+    return contains
 
 
 
